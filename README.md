@@ -1,0 +1,1 @@
+Silly Slack weather plugin
