@@ -27,6 +27,8 @@ app.get('/', function (req, res) {
     });
 });
 
-app.listen(3000, function () {
-    console.log('express listening on port 3000');
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function () {
+    console.log('express listening on port ', app.get('port'));
 });
